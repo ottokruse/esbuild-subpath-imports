@@ -1,0 +1,11 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["DOM"],
+    "baseUrl": "./src",
+    "paths": {
+      "#node-web-compat": ["node-web-compat-node.ts"] // Have to add this otherwise TS won't compile
+    }
+  },
+  "include": ["src/**/*"]
+}
